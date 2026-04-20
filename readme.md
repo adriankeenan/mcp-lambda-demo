@@ -6,6 +6,7 @@ Hosted via API Gateway with static API key authorizer.
 ## Demo
 
 URL: https://ep37yzqtnc.execute-api.eu-west-2.amazonaws.com/mcp
+
 Auth: Bearer token or `authorization` query param with value `changeme`
 
 Add the MCP server to your LLM tool and choice and ask about the available tools.
