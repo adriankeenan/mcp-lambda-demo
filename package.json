@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "cdk": "cdk",
-    "dev": "ts-node --prefer-ts-exts src/local.ts",
+    "dev": "tsx src/local.ts",
     "generate:zod": "ts-to-zod"
   },
   "devDependencies": {
@@ -17,6 +17,7 @@
     "express": "^5",
     "ts-node": "^10.9.2",
     "ts-to-zod": "^5.1.0",
+    "tsx": "^4.22.3",
     "typescript": "~5.7.0"
   },
   "dependencies": {
