@@ -5,15 +5,19 @@
   "scripts": {
     "build": "tsc",
     "cdk": "cdk",
+    "dev": "tsx src/local.ts",
     "generate:zod": "ts-to-zod"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.145",
+    "@types/express": "^5",
     "@types/node": "^22",
     "aws-cdk": "^2.170.0",
     "esbuild": "^0.25.0",
+    "express": "^5",
     "ts-node": "^10.9.2",
     "ts-to-zod": "^5.1.0",
+    "tsx": "^4.22.3",
     "typescript": "~5.7.0"
   },
   "dependencies": {

@@ -11,6 +11,17 @@ Auth: Bearer token or `authorization` query param with value `changeme`
 
 Add the MCP server to your LLM tool and choice and ask about the available tools.
 
+## Local development
+
+```
+npm i
+npm run dev
+```
+
+Server starts at `http://localhost:3000/mcp`. Set the `PORT` environment variable to use a different port.
+
+No auth is required when running locally.
+
 ## Deploy
 
 ```
@@ -24,6 +35,7 @@ Use `npm run generate:zod` to regenerate Zod schemas after changing TypeScript t
 ## Layout
 - [`infra/mcp-stack.ts`](infra/mcp-stack.ts): CDK stack definition
 - [`src/server.ts`](src/server.ts): Lambda handler for MCP requests
+- [`src/local.ts`](src/local.ts): Local Express server for development
 - [`src/mcp.ts`](src/mcp.ts): MCP server implementation
 - [`src/authorizer.ts`](src/authorizer.ts): API Gateway authorizer implementation
 - [`src/data.ts`](src/data.ts): Hardcoded data used by MCP tools
